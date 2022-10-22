@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /*margin-bottom: 60px;*/
+  background-color: darkolivegreen;
+}
+
+#BG {
+    background-image: url("../imgs/dogBG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.butts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#settings {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    background-color: transparent;
+}
+
+.modal-backdrop {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../imgs/catdog.png");
+}
+
+#info {
+    height: auto;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#staffCard1 {
+    border-style: none;
+    border-radius: 1%;
+    background-color: aliceblue;
+}
+
+#staffImg {
+    width: 100%;
+}
+
+#staffPetCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+#staffPetImg {
+    width: 30%;
+    border-style: none;
+    border-radius: 1%;
+    box-shadow: 5px 5px 8px;
+}
+
+#staffbio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel-inner {
+    margin-left: 15%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 5vw;
+    height: 5vw;
+    filter: invert(100%)
+}
+
+.card-img-bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
