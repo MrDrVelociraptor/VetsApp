@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    /*outline: 1px red solid;*/
 }
 
 html {
@@ -36,26 +37,20 @@ body {
 }
 
 #settings {
+    color: whitesmoke;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.modal-body {
-    background-color: transparent;
-}
+/*.modal-body {
+    background-color: black;
+}*/
 
 .modal-backdrop {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../imgs/catdog.png");
-}
-
-#info {
-    height: auto;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
 #staffCard1 {
@@ -94,7 +89,7 @@ body {
 .carousel-control-prev-icon {
     width: 5vw;
     height: 5vw;
-    filter: invert(100%)
+    filter: invert(100%);
 }
 
 .card-img-bottom {
@@ -102,7 +97,8 @@ body {
     justify-content: flex-end;
 }
 
-
-
-
-
+#dropdownMenuLink {
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+}

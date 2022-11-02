@@ -1,8 +1,12 @@
 {
   "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
     "mssql1": {
       "type": "mssql",
-      "connectionId": "ConnectionStrings:VetsAppContextConnection"
+      "connectionId": "ConnectionStrings:VetsAppConnection",
+      "dynamicId": null
     }
   }
 }

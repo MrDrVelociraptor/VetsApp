@@ -1,13 +1,13 @@
+using VetsApp.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("VetsAppContextConnection") ?? throw new InvalidOperationException("Connection string 'VetsAppContextConnection' not found.");
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer( 
+       builder.Configuration.GetConnectionString("VetsAppConnection")
+    ));
 
 var app = builder.Build();
 

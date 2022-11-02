@@ -12,35 +12,47 @@
 </head>
 <body id="BG">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark box-shadow mb-3">
+            <div class="container-fluid" >
                 <a class="navbar-brand" asp-area="" asp-page="/Index">VetsApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-around">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/About us">About us</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/About us">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Services">Services</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Location">Location</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Location">Location</a>
                         </li>
                     </ul>
                 </div>
-                <button type="button" id="settings" data-bs-toggle="modal" data-bs-target="#changeBG">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                </button>
-            </div>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-symbols-outlined">
+                            emoji_people
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" >
+                        <li><a class="dropdown-item" asp-area="" asp-page="/Clients/Index">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                    <button type="button" id="settings" data-bs-toggle="modal" data-bs-target="#changeBG">
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+                    </button>
+                </div>
         </nav>
         <div class="modal fade" id="changeBG" tabindex="-1" aria-labelledby="changeBGLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -63,18 +75,15 @@
             </div>
         </div>
     </header>
-    @*<div class="container">
-        <img src="" class="img-fluid" id="mainImg" />
-    </div>*@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted bg-dark" id="foot">
         <div class="container">
-            &copy; 2022 - VetsApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - VetsApp - <a asp-area="" asp-page="/www.vets.com">www.vets.com</a>
         </div>
     </footer>
 

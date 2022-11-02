@@ -1,0 +1,64 @@
+﻿@page
+@model VetsApp.Pages.Clients.IndexModel
+@{
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-dark">Profile Info</h2>
+        </div>
+    </div>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+        <th scope="row">First Name</th>
+        <th scope="row">Surname</th>
+        <th scope="row">Contact Number</th>
+        <th scope="row">Postcode</th>
+        <th scope="row">Pet Name</th>
+        <th scope="row">Pet Breed</th>
+        <th scope="row">Pet Age</th>
+        <th scope="row">Pet Gender</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var obj in Model.Members)
+            {
+                <tr>
+                    @*<th scope="row">First Name</th>*@
+                        <td>@obj.FirstName</td>
+                </tr>
+                <tr>
+                    @*<th scope="row">Surname</th>*@
+                        <td>@obj.Surname</td>
+                </tr>
+                <tr>
+                    @*<th scope="row">Contact Number</th>*@
+                    <td>@obj.ContactNumber</td>
+                </tr>
+                <tr>
+                    @*<th scope="row">Postcode</th>*@
+                    <td>@obj.Postcode</td>
+                </tr>
+                <tr>
+                    @*<th scope="row">Pet Name</th>*@
+                    <td>@obj.PetName</td>
+                </tr>
+                <tr>
+                    @*<th scope="row">Pet Breed</th>*@
+                    <td>@obj.PetBreed</td>
+                </tr>
+                <tr>
+                    @*<th scope="row">Pet Age</th>*@
+                    <td>@obj.PetAge</td>
+                </tr>
+                <tr>
+                    @*<th scope="row">Pet Gender</th>*@
+                    <td>@obj.PetGender</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
